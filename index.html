@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Replay Session App</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/rrweb@latest/dist/rrweb.min.css" />
+  <script type="module" src="./index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/rrweb@latest/dist/rrweb-all.min.js"></script>
+</head>
+
+<body>
+  <div class="recorder">
+    <h1>RR Web Session Replay POC</h1>
+
+    <button onclick="startRec()">Start Recording</button>
+    <button onclick="stopRec()">Stop Recording</button>
+    <button onclick="downloadEvents()">Download</button>
+    <form>
+      <label for="fname">First name:</label>
+      <input type="text" id="fname" name="fname" /><br /><br />
+      <label for="lname">Last name:</label>
+      <input type="text" id="lname" name="lname" /><br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+
+  </div>
+  <div class="replayer">
+    <h1>replay</h1>
+    <button onclick="fetchSessionDataFromFile()">Fetch</button>
+    <button onclick="playSession()">Play</button>
+  </div>
+  <script src="./index.js"></script>
+</body>
+
+</html>

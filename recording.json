@@ -1,0 +1,522 @@
+[
+    {
+      "type": 4,
+      "data": {
+        "href": "file:///C:/Users/abhin/Documents/Node%20Js/my-app/index.html",
+        "width": 1536,
+        "height": 665
+      },
+      "timestamp": 1710502134779
+    },
+    {
+      "type": 2,
+      "data": {
+        "node": {
+          "type": 0,
+          "childNodes": [
+            {
+              "type": 1,
+              "name": "html",
+              "publicId": "",
+              "systemId": "",
+              "id": 2
+            },
+            {
+              "type": 2,
+              "tagName": "html",
+              "attributes": { "lang": "en" },
+              "childNodes": [
+                {
+                  "type": 2,
+                  "tagName": "head",
+                  "attributes": {},
+                  "childNodes": [
+                    { "type": 3, "textContent": "\n    ", "id": 5 },
+                    {
+                      "type": 2,
+                      "tagName": "meta",
+                      "attributes": { "charset": "UTF-8" },
+                      "childNodes": [],
+                      "id": 6
+                    },
+                    { "type": 3, "textContent": "\n    ", "id": 7 },
+                    {
+                      "type": 2,
+                      "tagName": "meta",
+                      "attributes": {
+                        "name": "viewport",
+                        "content": "width=device-width, initial-scale=1.0"
+                      },
+                      "childNodes": [],
+                      "id": 8
+                    },
+                    { "type": 3, "textContent": "\n    ", "id": 9 },
+                    {
+                      "type": 2,
+                      "tagName": "title",
+                      "attributes": {},
+                      "childNodes": [
+                        { "type": 3, "textContent": "Document", "id": 11 }
+                      ],
+                      "id": 10
+                    },
+                    { "type": 3, "textContent": "\n    ", "id": 12 },
+                    {
+                      "type": 2,
+                      "tagName": "link",
+                      "attributes": {
+                        "_cssText": ".recorder { border: 5px solid black; background-color: antiquewhite; }.replayer { border: 5px solid black; background-color: bisque; margin-top: 10px; }"
+                      },
+                      "childNodes": [],
+                      "id": 13
+                    },
+                    { "type": 3, "textContent": "\n    ", "id": 14 },
+                    {
+                      "type": 2,
+                      "tagName": "link",
+                      "attributes": {
+                        "rel": "stylesheet",
+                        "href": "https://cdn.jsdelivr.net/npm/rrweb@latest/dist/rrweb.min.css"
+                      },
+                      "childNodes": [],
+                      "id": 15
+                    },
+                    { "type": 3, "textContent": "\n    ", "id": 16 },
+                    {
+                      "type": 2,
+                      "tagName": "script",
+                      "attributes": {
+                        "type": "module",
+                        "src": "file:///C:/Users/abhin/Documents/Node%20Js/my-app/index.js"
+                      },
+                      "childNodes": [],
+                      "id": 17
+                    },
+                    { "type": 3, "textContent": "\n    ", "id": 18 },
+                    {
+                      "type": 2,
+                      "tagName": "script",
+                      "attributes": {
+                        "src": "https://cdn.jsdelivr.net/npm/rrweb@latest/dist/rrweb-all.min.js"
+                      },
+                      "childNodes": [],
+                      "id": 19
+                    },
+                    { "type": 3, "textContent": "\n", "id": 20 }
+                  ],
+                  "id": 4
+                },
+                { "type": 3, "textContent": "\n", "id": 21 },
+                {
+                  "type": 2,
+                  "tagName": "body",
+                  "attributes": {},
+                  "childNodes": [
+                    { "type": 3, "textContent": "\n    ", "id": 23 },
+                    {
+                      "type": 2,
+                      "tagName": "div",
+                      "attributes": { "class": "recorder" },
+                      "childNodes": [
+                        { "type": 3, "textContent": "\n        ", "id": 25 },
+                        {
+                          "type": 2,
+                          "tagName": "h1",
+                          "attributes": {},
+                          "childNodes": [
+                            {
+                              "type": 3,
+                              "textContent": "RR Web Session Replay POC",
+                              "id": 27
+                            }
+                          ],
+                          "id": 26
+                        },
+                        { "type": 3, "textContent": "\n\n      ", "id": 28 },
+                        {
+                          "type": 2,
+                          "tagName": "button",
+                          "attributes": { "onclick": "startRec()" },
+                          "childNodes": [
+                            {
+                              "type": 3,
+                              "textContent": "Start Recording",
+                              "id": 30
+                            }
+                          ],
+                          "id": 29
+                        },
+                        { "type": 3, "textContent": "\n      ", "id": 31 },
+                        {
+                          "type": 2,
+                          "tagName": "button",
+                          "attributes": {
+                            "onclick": "(e)=>{console.log('recording stopped..')}"
+                          },
+                          "childNodes": [
+                            {
+                              "type": 3,
+                              "textContent": "Stop Recording",
+                              "id": 33
+                            }
+                          ],
+                          "id": 32
+                        },
+                        { "type": 3, "textContent": "\n      ", "id": 34 },
+                        {
+                          "type": 2,
+                          "tagName": "button",
+                          "attributes": { "onclick": "downloadEvents()" },
+                          "childNodes": [
+                            { "type": 3, "textContent": "Download", "id": 36 }
+                          ],
+                          "id": 35
+                        },
+                        { "type": 3, "textContent": "\n      ", "id": 37 },
+                        {
+                          "type": 2,
+                          "tagName": "form",
+                          "attributes": {},
+                          "childNodes": [
+                            { "type": 3, "textContent": "\n        ", "id": 39 },
+                            {
+                              "type": 2,
+                              "tagName": "label",
+                              "attributes": { "for": "fname" },
+                              "childNodes": [
+                                {
+                                  "type": 3,
+                                  "textContent": "First name:",
+                                  "id": 41
+                                }
+                              ],
+                              "id": 40
+                            },
+                            { "type": 3, "textContent": "\n        ", "id": 42 },
+                            {
+                              "type": 2,
+                              "tagName": "input",
+                              "attributes": {
+                                "type": "text",
+                                "id": "fname",
+                                "name": "fname"
+                              },
+                              "childNodes": [],
+                              "id": 43
+                            },
+                            {
+                              "type": 2,
+                              "tagName": "br",
+                              "attributes": {},
+                              "childNodes": [],
+                              "id": 44
+                            },
+                            {
+                              "type": 2,
+                              "tagName": "br",
+                              "attributes": {},
+                              "childNodes": [],
+                              "id": 45
+                            },
+                            { "type": 3, "textContent": "\n        ", "id": 46 },
+                            {
+                              "type": 2,
+                              "tagName": "label",
+                              "attributes": { "for": "lname" },
+                              "childNodes": [
+                                {
+                                  "type": 3,
+                                  "textContent": "Last name:",
+                                  "id": 48
+                                }
+                              ],
+                              "id": 47
+                            },
+                            { "type": 3, "textContent": "\n        ", "id": 49 },
+                            {
+                              "type": 2,
+                              "tagName": "input",
+                              "attributes": {
+                                "type": "text",
+                                "id": "lname",
+                                "name": "lname"
+                              },
+                              "childNodes": [],
+                              "id": 50
+                            },
+                            {
+                              "type": 2,
+                              "tagName": "br",
+                              "attributes": {},
+                              "childNodes": [],
+                              "id": 51
+                            },
+                            {
+                              "type": 2,
+                              "tagName": "br",
+                              "attributes": {},
+                              "childNodes": [],
+                              "id": 52
+                            },
+                            { "type": 3, "textContent": "\n        ", "id": 53 },
+                            {
+                              "type": 2,
+                              "tagName": "input",
+                              "attributes": {
+                                "type": "submit",
+                                "value": "Submit"
+                              },
+                              "childNodes": [],
+                              "id": 54
+                            },
+                            { "type": 3, "textContent": "\n      ", "id": 55 }
+                          ],
+                          "id": 38
+                        },
+                        { "type": 3, "textContent": "\n\n    ", "id": 56 }
+                      ],
+                      "id": 24
+                    },
+                    { "type": 3, "textContent": "\n    ", "id": 57 },
+                    {
+                      "type": 2,
+                      "tagName": "div",
+                      "attributes": { "class": "replayer" },
+                      "childNodes": [
+                        { "type": 3, "textContent": "\n        ", "id": 59 },
+                        {
+                          "type": 2,
+                          "tagName": "h1",
+                          "attributes": {},
+                          "childNodes": [
+                            { "type": 3, "textContent": "replay", "id": 61 }
+                          ],
+                          "id": 60
+                        },
+                        { "type": 3, "textContent": "\n        ", "id": 62 },
+                        {
+                          "type": 2,
+                          "tagName": "button",
+                          "attributes": { "onclick": "showLog()" },
+                          "childNodes": [
+                            { "type": 3, "textContent": "Check", "id": 64 }
+                          ],
+                          "id": 63
+                        },
+                        { "type": 3, "textContent": "\n        ", "id": 65 },
+                        {
+                          "type": 2,
+                          "tagName": "button",
+                          "attributes": { "onclick": "playSession()" },
+                          "childNodes": [
+                            { "type": 3, "textContent": "Play", "id": 67 }
+                          ],
+                          "id": 66
+                        },
+                        { "type": 3, "textContent": "       \n    ", "id": 68 }
+                      ],
+                      "id": 58
+                    },
+                    { "type": 3, "textContent": "\n    ", "id": 69 },
+                    {
+                      "type": 2,
+                      "tagName": "script",
+                      "attributes": {
+                        "src": "file:///C:/Users/abhin/Documents/Node%20Js/my-app/index.js"
+                      },
+                      "childNodes": [],
+                      "id": 70
+                    },
+                    { "type": 3, "textContent": "\n\n", "id": 71 }
+                  ],
+                  "id": 22
+                }
+              ],
+              "id": 3
+            }
+          ],
+          "id": 1
+        },
+        "initialOffset": { "left": 0, "top": 0 }
+      },
+      "timestamp": 1710502134783
+    },
+    {
+      "type": 3,
+      "data": {
+        "source": 1,
+        "positions": [{ "x": 94, "y": 130, "id": 43, "timeOffset": 0 }]
+      },
+      "timestamp": 1710502136177
+    },
+    {
+      "type": 3,
+      "data": {
+        "source": 1,
+        "positions": [
+          { "x": 146, "y": 199, "id": 38, "timeOffset": -447 },
+          { "x": 210, "y": 202, "id": 38, "timeOffset": -383 },
+          { "x": 268, "y": 138, "id": 38, "timeOffset": -317 },
+          { "x": 271, "y": 129, "id": 38, "timeOffset": -267 },
+          { "x": 268, "y": 130, "id": 38, "timeOffset": -216 },
+          { "x": 260, "y": 189, "id": 38, "timeOffset": -166 },
+          { "x": 312, "y": 235, "id": 58, "timeOffset": -101 },
+          { "x": 378, "y": 164, "id": 38, "timeOffset": -50 },
+          { "x": 389, "y": 133, "id": 38, "timeOffset": 0 }
+        ]
+      },
+      "timestamp": 1710502136689
+    },
+    {
+      "type": 3,
+      "data": {
+        "source": 1,
+        "positions": [
+          { "x": 390, "y": 138, "id": 38, "timeOffset": -462 },
+          { "x": 411, "y": 214, "id": 38, "timeOffset": -396 },
+          { "x": 444, "y": 196, "id": 38, "timeOffset": -328 },
+          { "x": 456, "y": 138, "id": 38, "timeOffset": -261 },
+          { "x": 462, "y": 172, "id": 38, "timeOffset": -197 },
+          { "x": 470, "y": 212, "id": 38, "timeOffset": -147 },
+          { "x": 473, "y": 215, "id": 24, "timeOffset": -95 },
+          { "x": 471, "y": 175, "id": 38, "timeOffset": -31 }
+        ]
+      },
+      "timestamp": 1710502137202
+    },
+    {
+      "type": 3,
+      "data": {
+        "source": 1,
+        "positions": [
+          { "x": 486, "y": 226, "id": 22, "timeOffset": -501 },
+          { "x": 499, "y": 275, "id": 60, "timeOffset": -448 },
+          { "x": 470, "y": 158, "id": 38, "timeOffset": -384 },
+          { "x": 462, "y": 134, "id": 38, "timeOffset": -334 },
+          { "x": 463, "y": 135, "id": 38, "timeOffset": -283 },
+          { "x": 482, "y": 227, "id": 22, "timeOffset": -233 },
+          { "x": 482, "y": 243, "id": 58, "timeOffset": -168 },
+          { "x": 466, "y": 176, "id": 38, "timeOffset": -115 },
+          { "x": 479, "y": 186, "id": 38, "timeOffset": -50 },
+          { "x": 502, "y": 221, "id": 22, "timeOffset": 0 }
+        ]
+      },
+      "timestamp": 1710502137721
+    },
+    {
+      "type": 3,
+      "data": {
+        "source": 1,
+        "positions": [
+          { "x": 500, "y": 230, "id": 58, "timeOffset": -441 },
+          { "x": 387, "y": 204, "id": 38, "timeOffset": -390 },
+          { "x": 367, "y": 194, "id": 38, "timeOffset": -324 },
+          { "x": 451, "y": 156, "id": 38, "timeOffset": -257 },
+          { "x": 562, "y": 211, "id": 38, "timeOffset": -192 },
+          { "x": 562, "y": 242, "id": 58, "timeOffset": -142 },
+          { "x": 494, "y": 254, "id": 58, "timeOffset": -92 },
+          { "x": 422, "y": 160, "id": 38, "timeOffset": -42 }
+        ]
+      },
+      "timestamp": 1710502138229
+    },
+    {
+      "type": 3,
+      "data": {
+        "source": 1,
+        "positions": [
+          { "x": 429, "y": 127, "id": 38, "timeOffset": -551 },
+          { "x": 511, "y": 136, "id": 38, "timeOffset": -501 },
+          { "x": 553, "y": 161, "id": 38, "timeOffset": -451 },
+          { "x": 555, "y": 146, "id": 38, "timeOffset": -400 },
+          { "x": 390, "y": 66, "id": 26, "timeOffset": -334 },
+          { "x": 312, "y": 134, "id": 38, "timeOffset": -284 },
+          { "x": 324, "y": 222, "id": 22, "timeOffset": -218 },
+          { "x": 353, "y": 226, "id": 22, "timeOffset": -168 },
+          { "x": 396, "y": 150, "id": 38, "timeOffset": -118 },
+          { "x": 390, "y": 82, "id": 24, "timeOffset": -67 },
+          { "x": 295, "y": 98, "id": 24, "timeOffset": 0 }
+        ]
+      },
+      "timestamp": 1710502138788
+    },
+    {
+      "type": 3,
+      "data": {
+        "source": 1,
+        "positions": [
+          { "x": 256, "y": 306, "id": 58, "timeOffset": -433 },
+          { "x": 314, "y": 359, "id": 3, "timeOffset": -368 },
+          { "x": 371, "y": 162, "id": 38, "timeOffset": -302 },
+          { "x": 347, "y": 113, "id": 24, "timeOffset": -252 },
+          { "x": 269, "y": 160, "id": 38, "timeOffset": -186 },
+          { "x": 270, "y": 283, "id": 60, "timeOffset": -136 },
+          { "x": 352, "y": 306, "id": 58, "timeOffset": -86 },
+          { "x": 407, "y": 182, "id": 38, "timeOffset": -36 }
+        ]
+      },
+      "timestamp": 1710502139289
+    },
+    {
+      "type": 3,
+      "data": {
+        "source": 1,
+        "positions": [
+          { "x": 398, "y": 130, "id": 38, "timeOffset": -500 },
+          { "x": 347, "y": 129, "id": 38, "timeOffset": -449 },
+          { "x": 282, "y": 200, "id": 38, "timeOffset": -397 },
+          { "x": 271, "y": 225, "id": 22, "timeOffset": -333 },
+          { "x": 270, "y": 224, "id": 22, "timeOffset": -264 },
+          { "x": 317, "y": 155, "id": 38, "timeOffset": -200 },
+          { "x": 344, "y": 149, "id": 38, "timeOffset": -150 },
+          { "x": 351, "y": 151, "id": 38, "timeOffset": -100 },
+          { "x": 341, "y": 152, "id": 38, "timeOffset": -50 },
+          { "x": 313, "y": 142, "id": 38, "timeOffset": 0 }
+        ]
+      },
+      "timestamp": 1710502139803
+    },
+    {
+      "type": 3,
+      "data": {
+        "source": 1,
+        "positions": [
+          { "x": 304, "y": 135, "id": 38, "timeOffset": -454 },
+          { "x": 300, "y": 130, "id": 38, "timeOffset": -401 },
+          { "x": 296, "y": 122, "id": 38, "timeOffset": -338 },
+          { "x": 291, "y": 114, "id": 35, "timeOffset": -287 },
+          { "x": 284, "y": 109, "id": 35, "timeOffset": -221 },
+          { "x": 278, "y": 106, "id": 35, "timeOffset": -171 },
+          { "x": 272, "y": 102, "id": 35, "timeOffset": -121 },
+          { "x": 268, "y": 101, "id": 35, "timeOffset": -71 }
+        ]
+      },
+      "timestamp": 1710502140307
+    },
+    {
+      "type": 3,
+      "data": { "source": 2, "type": 1, "id": 35, "x": 267, "y": 101 },
+      "timestamp": 1710502140470
+    },
+    {
+      "type": 3,
+      "data": { "source": 2, "type": 6, "id": 29 },
+      "timestamp": 1710502140471
+    },
+    {
+      "type": 3,
+      "data": { "source": 2, "type": 5, "id": 35 },
+      "timestamp": 1710502140472
+    },
+    {
+      "type": 3,
+      "data": { "source": 2, "type": 0, "id": 35, "x": 267, "y": 101 },
+      "timestamp": 1710502140687
+    },
+    {
+      "type": 3,
+      "data": { "source": 2, "type": 2, "id": 35, "x": 267, "y": 101 },
+      "timestamp": 1710502140689
+    }
+  ]
+  
