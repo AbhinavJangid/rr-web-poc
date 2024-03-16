@@ -2,6 +2,7 @@ var cronyScript = document.createElement("SCRIPT");
 cronyScript.src = "https://cdn.socket.io/4.4.1/socket.io.min.js";
 cronyScript.type = "text/javascript";
 document.getElementsByTagName("HEAD")[0].appendChild(cronyScript);
+var events = [];
 
 // globle window funtion can be accessed from anywhere in the browser
 window.cronyWidget = function (customConfig) {
@@ -12,7 +13,7 @@ window.cronyWidget = function (customConfig) {
 
   var socket = io(apiServer);
   var roomName = token;
-  var events = [];
+  
 
   console.log("crony script initiated.....");
 
@@ -27,19 +28,8 @@ window.cronyWidget = function (customConfig) {
         events.push(event);
       },
     });
-    var json = JSON.stringify(events);
+    
 
-    json = [json];
-    var blob1 = new Blob(json, { type: "text/plain;charset=utf-8" });
-    var url = window.URL || window.webkitURL;
-    link = url.createObjectURL(blob1);
-    var a = document.createElement("a");
-    a.download = "recording.txt";
-    a.href = link;
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
-    console.log(events);
 
 
     // recevied from agent side
@@ -49,6 +39,18 @@ window.cronyWidget = function (customConfig) {
   });
 };
 
+function downloadEvents(){
 
-
-
+    var json = JSON.stringify(events);
+    json = [json];
+    var blob1 = new Blob(json, { type: "text/plain;charset=utf-8" });
+    var url = window.URL || window.webkitURL;
+    link = url.createObjectURL(blob1);
+    var a = document.createElement("a");
+    a.download = "recording.json";
+    a.href = link;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    console.log(events);
+}
